@@ -1,0 +1,1 @@
+dotnet run --project Canteen_2022 --migrate-database
