@@ -12,6 +12,6 @@
 
 6- launch 'dotenet run --migrate-database' inside ./aspnet-core for create tables in Database 
 
-7- Launch 'dotnet run' inside ./aspnet-core/src/Canteen_2022.HttpApi.Host for starting the BackEnd, then https://localhost:44357/
+7- Launch 'dotnet run' inside ./aspnet-core for starting the BackEnd, then https://localhost:44357/
 
 8- launch 'yarn start' inside ./angular/ for starting the FrontEnd then https://localhost:4200/ => login/pass === admin/1q2w3E*
