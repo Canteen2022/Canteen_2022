@@ -10,7 +10,7 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44312',
+    issuer: 'https://localhost:44328',
     redirectUri: baseUrl,
     clientId: 'Canteen_2022_App',
     responseType: 'code',
@@ -19,7 +19,7 @@ export const environment = {
   },
   apis: {
     default: {
-      url: 'https://localhost:44312',
+      url: 'https://localhost:44328',
       rootNamespace: 'Canteen_2022',
     },
   },

@@ -8,6 +8,8 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
+using Canteen_2022.Entities;
+
 namespace Canteen_2022.Data;
 
 public class Canteen_2022DbContext : AbpDbContext<Canteen_2022DbContext>
@@ -32,5 +34,9 @@ public class Canteen_2022DbContext : AbpDbContext<Canteen_2022DbContext>
         builder.ConfigureTenantManagement();
 
         /* Configure your own entities here */
+        builder.Entity<CalendarItem>(b =>
+            {   
+                b.ToTable("CalendarItems");
+            });
     }
 }
