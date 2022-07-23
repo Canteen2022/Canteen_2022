@@ -10,7 +10,7 @@
 
 5- install MariaDB, and create Databse `Canteen_2022` and create MariaDB user/pass: dotnet/CanteeN123$
 
-6- launch `dotenet run --migrate-database` inside `./aspnet-core/` to create tables in Database 
+6- launch `dotenet run --migrate-database` inside `./aspnet-core/Canteen_2022` to create tables in Database 
 
 7- Launch `dotnet run` inside `./aspnet-core/` to start the BackEnd, then https://localhost:44357/
 
