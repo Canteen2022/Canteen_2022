@@ -6,7 +6,7 @@
 
 3- install abp libs inside `./aspnet-core/`: `abp install-libs`
 
-4- install @angular/material : `yarn add @angular/material`
+4- install @angular/material : `yarn add @angular/material@13`
 
 5- install Angular libs from `./angular/`: `yarn`
 
