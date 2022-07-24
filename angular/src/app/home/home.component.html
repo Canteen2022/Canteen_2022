@@ -8,9 +8,9 @@
       <form class="row row-cols-lg-auto g-3 align-items-center" (ngSubmit)="create()">
         <div class="col-12">
           <div class="input-group">
-            <input matInput [matDatepicker]="picker" >
-            <mat-datepicker-toggle matSuffix [for]="picker" name="NewcalendarDate" [(ngModel)]="newCalendarDate">
-              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="newCalendarDate" class="form-control" name="NewCalendarItem">
+            <mat-datepicker-toggle matSuffix [for]="picker" >
+              <!--<mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>-->
             </mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
             <!--<input name="NewcalendarDate" type="text" [(ngModel)]="newCalendarDate" class="form-control" placeholder="enter date..." />-->

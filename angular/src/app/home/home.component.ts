@@ -6,7 +6,7 @@ import { CalendarService } from "@proxy/services";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  styleUrls: ['./home.component.scss']
 })
 
 export class HomeComponent implements OnInit {
@@ -21,9 +21,10 @@ export class HomeComponent implements OnInit {
   { }
 
   ngOnInit(): void {
-    this.CalendarService.getList().subscribe(response => {
-      this.CalendarItems = response;
-    });
+    // TODO : issue with this service !!!!
+    //this.CalendarService.getList().subscribe(response => {
+    //  this.CalendarItems = response;
+    //});
   }
   
   create(): void{
