@@ -6,13 +6,15 @@
 
 3- install abp libs inside `./aspnet-core/`: `abp install-libs`
 
-4- install Angular libs from `./angular/`: `yarn`
+4- install @angular/material : `yarn add @angular/material`
 
-5- install MariaDB, and create Databse `Canteen_2022` and create MariaDB user/pass: dotnet/CanteeN123$
+5- install Angular libs from `./angular/`: `yarn`
 
-6- launch `dotenet run --migrate-database` inside `./aspnet-core/Canteen_2022` to create tables in Database 
+6- install MariaDB, and create Databse `Canteen_2022` and create MariaDB user/pass: dotnet/CanteeN123$
 
-7- Launch `dotnet run` inside `./aspnet-core/` to start the BackEnd, then https://localhost:44357/
+7- launch `dotenet run --migrate-database` inside `./aspnet-core/Canteen_2022` to create tables in Database 
 
-8- launch `yarn start` inside `./angular/` to start the FrontEnd then https://localhost:4200/ => login/pass === admin/1q2w3E*
+8- Launch `dotnet run` inside `./aspnet-core/` to start the BackEnd, then https://localhost:44357/
+
+9- launch `yarn start` inside `./angular/` to start the FrontEnd then https://localhost:4200/ => login/pass === admin/1q2w3E*
 
