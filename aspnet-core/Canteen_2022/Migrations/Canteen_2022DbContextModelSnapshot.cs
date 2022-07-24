@@ -27,15 +27,21 @@ namespace Canteen_2022.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Test")
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("CalendarItems", (string)null);
                 });
 
-        #pragma warning restore 612, 618
+#pragma warning restore 612, 618
         }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Canteen_2022.Migrations
 {
-    public partial class Added_CalendarItem : Migration
+    public partial class Add_CalenderEntity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,10 @@ namespace Canteen_2022.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    Date = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                    CreationTime = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Test = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
                 {
@@ -27,7 +30,6 @@ namespace Canteen_2022.Migrations
         {
             migrationBuilder.DropTable(
                 name: "CalendarItems");
-
         }
     }
 }

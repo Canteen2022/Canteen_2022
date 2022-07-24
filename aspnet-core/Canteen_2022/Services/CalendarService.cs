@@ -21,20 +21,24 @@ public class CalendarService : ApplicationService
             .Select(item => new CalendarItemDto
             {
                 Id = item.Id,
-                Date = item.Date
+                Date = item.Date,
+                Test = item.Test,
+                CreationTime = item.CreationTime
             }).ToList();
     }
 
-    public async Task<CalendarItemDto> CreateAsync(DateTime date)
+    public async Task<CalendarItemDto> CreateAsync(DateTime date, string test)
     {
         var calendarItem = await _calendarItemRepository.InsertAsync(
-            new CalendarItem {Date = date}
+            new CalendarItem {Date = date, Test = test}
         );
 
         return new CalendarItemDto
         {
-            Id = calendarItem.Id,
-            Date = calendarItem.Date
+            //Id = calendarItem.Id,
+            Date = calendarItem.Date,
+            Test = calendarItem.Test,
+            //CreationTime = calendarItem.CreationTime
         };
     }
 

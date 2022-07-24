@@ -2,7 +2,6 @@ import { ToasterService } from "@abp/ng.theme.shared";
 import { Component, OnInit } from '@angular/core';
 import { CalendarItemDto } from "@proxy/services/dtos";
 import { CalendarService } from "@proxy/services";
-import { DateTimeFormatDto } from "@abp/ng.core";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +12,8 @@ import { DateTimeFormatDto } from "@abp/ng.core";
 export class HomeComponent implements OnInit {
 
   CalendarItems: CalendarItemDto[];
-  newCalendarDate: DateTimeFormatDto;
+  newCalendarDate: string;
+  newCalendarTest: string;
 
   constructor(
       private CalendarService: CalendarService,
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   }
   
   create(): void{
-    this.CalendarService.create(this.newCalendarDate).subscribe((result) => {
+    this.CalendarService.create(this.newCalendarDate, this.newCalendarTest).subscribe((result) => {
       this.CalendarItems = this.CalendarItems.concat(result);
       this.newCalendarDate = null;
     });
